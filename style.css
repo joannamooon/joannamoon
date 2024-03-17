@@ -10,8 +10,6 @@ body {
   width: 100%;
   min-height: 100px;
   position: sticky;
-  top: 0;
-  padding: 0;
   background-color: #ffffff;
   z-index: 999;
 }
@@ -47,7 +45,6 @@ body {
 .flex.centered {
   display: flex;
   align-items: center;
-  margin-top: 15px; 
 }
 
 .tab-button {
@@ -180,7 +177,6 @@ body {
 #aboutme {
   background-color: #ffffff;
   width: 940px;
-  margin: 50px;
   padding: 20px;
   border-bottom: 2px solid #dcc0a8;
   background-color: #ffffff;
@@ -214,7 +210,6 @@ body {
 
   #topbar, #topbar_inner{
     flex-direction: column; 
-    width:100%;
   }
 
   #sidebar,
@@ -235,6 +230,6 @@ body {
   #topbar-inner, #welcome, .footer, #aboutme{
     width: 100%;
     flex-direction: column;
-    text-align: center; 
+    align-items: center;
   }
 }
