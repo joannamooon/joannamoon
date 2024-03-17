@@ -238,4 +238,244 @@ body {
 #flappy {
   width: 15px; 
   height: 15px;
+}body {
+  background-color: #fafafa;
+}
+
+#topbar {
+  border-bottom: 2px solid #dcc0a8;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  width: 100%;
+  min-height: 100px;
+  position: sticky;
+  background-color: #ffffff;
+  z-index: 999;
+}
+
+#topbar-inner {
+  width: 100%; /* Use 100% of the #topbar width */
+  justify-content: space-between;
+  margin: 0 25%;
+}
+
+#icon {
+  border-radius: 50%;
+  padding: 3px;
+  border: 1px solid #eeeeee;
+  box-sizing: content-box;
+  width: 45px; /* You may need to adjust this based on actual image size */
+  height: 45px; 
+  margin-right: 10px; 
+}
+
+#blogtitle {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000
+}
+
+#blogtitle:hover {
+  color: #dcc0a8;
+}
+
+
+.flex.centered {
+  display: flex;
+  align-items: center;
+}
+
+.tab-button {
+  margin-right: 15px;
+  text-decoration: none; 
+  color: #000; 
+  font-size: 13px; 
+}
+
+.tab-button:hover {
+  color: #dcc0a8; 
+}
+
+#main {
+  display: flex;
+  flex-direction: row; 
+  width: 60%;
+  min-height: 100vh;
+  margin: auto auto;
+  gap: 20px; 
+}
+
+#sidebar {
+  border-right: 2px solid #dcc0a8;
+  width: 20%;
+  height: auto;
+  align-self: start;
+  padding: 20px;
+  background-color: #ffffff;
+  position: sticky;
+  top: 200px;
+  box-shadow: 0 1px 2px #eeeeee;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 160%;
+  flex-shrink: 0;
+  margin-left: 7%;
+}
+
+.centered {
+  align-items: center;
+  justify-content: center
+}
+
+.align-center {
+  align-items: center
+}
+
+
+
+.post {
+  width: 80%;
+  margin: 50px;
+  padding: 20px;
+  border-bottom: 2px solid #dcc0a8;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px #eeeeee;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 160%;
+  height: auto;
+
+}
+
+.post-title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #000000;
+  font-size: 1.2em;
+  line-height: 160%;
+}
+
+.read-more-link {
+  color:#000000;
+  text-decoration: none; 
+  font-weight: 500; 
+}
+
+.read-more-link:hover {
+  color: #dcc0a8;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.collapsible {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.collapsible:hover {
+  color: #dcc0a8;
+}
+
+.github-link {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color:#000000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.github-link:hover {
+  color: #dcc0a8;
+}
+
+.about-me-title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color:#000000;
+  font-size: 30px;
+  padding: 20px;
+}
+
+#aboutme {
+  background-color: #ffffff;
+  width: 940px;
+  padding: 20px;
+  border-bottom: 2px solid #dcc0a8;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px #eeeeee;
+}
+
+.about-me-content {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 160%;
+  padding: 20px;
+}
+
+.footer {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 160%;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #main {
+    flex-direction: column; 
+    width: 100%; 
+  }
+
+  #topbar, #topbar_inner{
+    flex-direction: column; 
+  }
+
+  #sidebar,
+  .post {
+    width: 100%; 
+    margin: 20px 0; 
+  }
+
+  #sidebar {
+    order: -1; 
+    top: 0;
+  }
+
+  .post-title, .post-content, .nav, .tab-button, .about-me-content, .about-me-title {
+    font-size: smaller; 
+  }
+  
+  #topbar-inner, #welcome, .footer, #aboutme{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#flappy {
+  width: 15px; 
+  height: 15px;
 }
